@@ -1,0 +1,37 @@
+<h1>Listing guacs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Avacado</th>
+      <th>Mixins</th>
+      <th>Time to make</th>
+      <th>Cost</th>
+      <th>Date created</th>
+      <th>Time put in</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guacs.each do |guac| %>
+      <tr>
+        <td><%= guac.name %></td>
+        <td><%= guac.avacado %></td>
+        <td><%= guac.mixins %></td>
+        <td><%= guac.time_to_make %></td>
+        <td><%= guac.cost %></td>
+        <td><%= guac.date_created %></td>
+        <td><%= guac.time_put_in %></td>
+        <td><%= link_to 'Show', guac %></td>
+        <td><%= link_to 'Edit', edit_guac_path(guac) %></td>
+        <td><%= link_to 'Destroy', guac, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guac', new_guac_path %>

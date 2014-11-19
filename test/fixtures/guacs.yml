@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  avacado: MyString
+  mixins: MyText
+  time_to_make: 1
+  cost: 1.5
+  date_created: 2014-11-17
+  time_put_in: 2014-11-17 20:32:40
+
+two:
+  name: MyString
+  avacado: MyString
+  mixins: MyText
+  time_to_make: 1
+  cost: 1.5
+  date_created: 2014-11-17
+  time_put_in: 2014-11-17 20:32:40

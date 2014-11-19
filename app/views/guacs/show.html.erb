@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @guac.name %>
+</p>
+
+<p>
+  <strong>Avacado:</strong>
+  <%= @guac.avacado %>
+</p>
+
+<p>
+  <strong>Mixins:</strong>
+  <%= @guac.mixins %>
+</p>
+
+<p>
+  <strong>Time to make:</strong>
+  <%= @guac.time_to_make %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @guac.cost %>
+</p>
+
+<p>
+  <strong>Date created:</strong>
+  <%= @guac.date_created %>
+</p>
+
+<p>
+  <strong>Time put in:</strong>
+  <%= @guac.time_put_in %>
+</p>
+
+<%= link_to 'Edit', edit_guac_path(@guac) %> |
+<%= link_to 'Back', guacs_path %>

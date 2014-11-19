@@ -1,0 +1,45 @@
+<%= form_for(@guac) do |f| %>
+  <% if @guac.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@guac.errors.count, "error") %> prohibited this guac from being saved:</h2>
+
+      <ul>
+      <% @guac.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :avacado %><br>
+    <%= f.text_field :avacado %>
+  </div>
+  <div class="field">
+    <%= f.label :mixins %><br>
+    <%= f.text_area :mixins %>
+  </div>
+  <div class="field">
+    <%= f.label :time_to_make %><br>
+    <%= f.number_field :time_to_make %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :date_created %><br>
+    <%= f.date_select :date_created %>
+  </div>
+  <div class="field">
+    <%= f.label :time_put_in %><br>
+    <%= f.time_select :time_put_in %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
